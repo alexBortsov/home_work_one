@@ -1,0 +1,63 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+html, 
+body{
+ font-size: 16px;
+ 
+}
+
+div{
+ width: 20.5rem;
+ margin: 10px auto;
+ border: 2px solid rgb(28, 72, 218);
+ border-radius: 1em;
+ padding: 5px;
+}
+
+section{
+   text-align: center;
+   color: rgb(255, 230, 0);
+   font-size: 1.5em;
+   font-family: "MyriadProSemiBoldItalic";
+}
+p{
+   text-align: end;
+   color: rgb(238, 38, 161);
+   font-size: 1.3rem;
+   font-family: "MyriadProRegular";
+}
+span{
+   color: rgb(94, 255, 0);
+   font-size: 1.5em;
+   font-family: "MyriadProBold";
+}
+h3{
+   text-align: end;
+   font-size: 1.5em;
+   color: greenyellow;
+   font-family: "Montserrat";
+   font-weight: 500;
+}
+h4{
+   text-align: center;
+   font-size: 1.3rem;
+   color: #a6cf69;
+   font-family: "Montserrat";
+   font-weight: 900;
+}
+h5{
+  font-size: 1.5em;
+  color: rgb(206, 131, 33); 
+  font-family: "Montserrat";
+   font-weight: 200;
+}
+table{
+   width: 100%;
+   text-align: center;
+   color: rgb(0, 174, 255);
+   font-size: 20px;
+   font-family: "Lobster";
+   font-weight: 500;
+}
