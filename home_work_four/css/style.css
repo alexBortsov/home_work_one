@@ -94,7 +94,7 @@ ul.list li:nth-last-child(6):before{
 
    content: '\25b6';
    display: inline-block;
-}/*1+1+1+1*/
+}/*1+10+1*/
 ul.list li:nth-last-child(6) a:active{
    width: 100%;
    min-height: 100px;
@@ -106,7 +106,7 @@ ul.list li:nth-last-child(6) a:active{
    text-indent: 100%;
    white-space: nowrap;
    overflow: hidden;
-}/*1+1+1+1*/
+}/*1+10+1+1*/
 
 /*---Стилизация и  разные виды обращений к элементу P-------------------------*/
 p{color: rgb(12, 75, 75);}/*1*/
@@ -150,7 +150,6 @@ html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item_
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(4)::before{
    content: '\25b6';
    display: inline-block;
-
 }/*1+1+1+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(4):hover{
    color: crimson;
@@ -177,18 +176,18 @@ html body input{}/*1+1+1*/
 html body form input{}/*1+1+1+1*/
 html body form.account-form input{}/*1+1+1+10+1*/
 html body form #account-form__checkbox{}/*1+1+1+1+100*/
-body form.account-form #account-form__checkbox{}/*1+1+1+10+1+10*/
-body form.account-form input{}/*1+1+1+10+1+100+10*/
-body form.account-form input[type="checkbox"]{}/*1+1+1+10+1+100+10*/
-html body form.account-form input[type="checkbox"]{}/*1+1+1+10+1+100*/
+body form.account-form #account-form__checkbox{}/*1+1+10+100*/
+body form.account-form input{}/*1+1+10+1*/
+body form.account-form input[type="checkbox"]{}/*1+1+10+1+10*/
+html body form.account-form input[type="checkbox"]{}/*1+1+1+10+1+10*/
 #account-form__checkbox {
 	display: block;
 	width: 17px;
-   height: 17px;
+   height: 32px;
 	cursor: pointer;
 	user-select: none;
 	position: relative;
-}
+}/*100*/
 #account-form__checkbox input[type=checkbox] {
 	position: absolute;
 	z-index: -1;
@@ -196,16 +195,16 @@ html body form.account-form input[type="checkbox"]{}/*1+1+1+10+1+100*/
 	display: block;
 	width: 0;
 	height: 0;
-}
+}/*100+1+10*/
 #account-form__checkbox:hover::after{
    content: '\1F448 Поставь галочку!';
    display: inline-block;
    position: absolute;
-   top: 0;
+   top: 7px;
    left: 20px;
    width: 150px;
    color: rgb(226, 55, 43);
-}
+}/*100*/
 
 /*---Стилизация и  разные виды обращений к элементу IMG-------------*/
 img{}/*1*/
@@ -219,17 +218,42 @@ body form button img{}/*1+1+1+1*/
 html body form img{}/*1+1+1+1*/
 html body form button img{}/*1+1+1+1+1*/
 html body form.account-form button img{}/*1+1+1+10+1+1*/
-html body form.account-form button[type="submit"] img{}/*1+1+1+10+1+10+1*/
+html body form.account-form button[type="submit"] img{
+   border: 1px solid #EFEFEF;
+   position: relative;
+   top: 0px;
+}/*1+1+1+10+1+10+1*/
+html body form.account-form button[type="submit"] img:hover{
+   border: 1px solid red;
+   position: relative;
+   top: 0px;
+   border-radius: 5px;
+   margin-right: 5px;
+}/*1+1+1+10+1+10+1*/
+html body form.account-form button[type="submit"]{
+   display: flex;
+   border: 4px solid rgb(143, 140, 140);
+   border-radius: 10px;
+   align-items: center;
+   background: rgb(254,252,253);
 
+   
+}/*1+1+1+10+1+10*/
 
+html body form.account-form button[type="submit"]:hover{
+   display: flex;
+   border: 4px solid rgb(218, 33, 33);
+   border-radius: 10px;
+   align-items: center;
 
+   
+}/*1+1+1+10+1+10*/
 
-
-/*---Общие классы, id-----------------------------*/
+/*---Общие классы, id, теги-----------------------------*/
 a{
    text-decoration: none;
    color: rgb(231, 66, 231);
-}
+}/*1*/
 .list {
    list-style-type: square;  
 }/*10*/
@@ -252,10 +276,7 @@ a{
 }/*10  */
 .account-form__input {
 
-}/**/
-#account-form {
+}/*10*/
+#account-form__checkbox {
   
-}/*100*/
-#checkbox{
-
 }/*100*/
