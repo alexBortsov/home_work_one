@@ -9,16 +9,17 @@ body{
    margin: 20px auto;
    border-radius: 15px;
    padding: 10px;
-
-}
-h1{font-weight: normal; text-align: center;}/*1*/
+}/*10*/
+h1{font-weight: normal; text-align: center; font-family: "CaviarDreamsRegular";}/*1*/
 body h1{color: beige;}/*1+1*/
 body>*{background: rgb(47, 224, 31);}/*1*/
 html body>*{background: rgb(204, 204, 207);}/*1+1*/
 html body h1{color: deeppink;}/*1+1+1*/
-/*html body h1:nth-child(1){color: rgb(155, 195, 218);}1+1+1 - фиксирует цвет каскадность не работает*/
+html body h1:nth-child(1){}/*1+1+1*/
 body h1:hover{background: rgb(206, 51, 136); color: rgb(10, 231, 10); border-radius: 15px; padding: 5px;}/*1+1+1*/
+
 /*---Стилизация и  разные виды обращений к элементу SPAN---------------------*/
+
 span{color: brown;}/*1*/
 span:only-child {background: rgb(17, 204, 64);}
 h1>*{color: rgb(78, 228, 48);}/*1*/
@@ -26,6 +27,8 @@ h1>span{color: chocolate;}/*1+1*/
 h1 span{color: rgb(97, 51, 18);}/*1+1*/
 body h1 span{color: cornflowerblue;}/*1+1+1*/
 html body h1 span{color: darkkhaki;}/*1+1+1+1*/
+html body div h1 span{color: rgb(44, 44, 38);}/*1+1+1+1+1*/
+html body._container h1 span{color: rgb(107, 104, 62);}/*1+1+10+1+1*/
 body h1 span:nth-child(1){color: darkmagenta;}/*1+1+1*/
 html body h1 span:nth-child(1){color: darksalmon;}/*1+1+1+1*/
 html body h1 span:hover{color: rgb(82, 20, 228);}/*1+1+1+1*/
@@ -46,17 +49,19 @@ html body h1 span:before{
 }/*1+1+1+1*/
 html body h1 span:hover:before{
    content: '\2039';
-   display: inline-block;
-  
-  }/*1+1+1+1*/
-  html body h1 span:active{background: rgb(28, 226, 55);}/*1+1+1+1*/
+   display: inline-block; 
+}/*1+1+1+1*/
+html body h1 span:active{background: rgb(28, 226, 55);}/*1+1+1+1*/
   
   /*---Стилизация и  разные виды обращений к элементу LI-------------------------*/
-li{background: rgb(29, 226, 118);}/*1*/
+
+li{background: rgb(29, 226, 118); font-family: "CaviarDreamsBold";}/*1*/
 ul li{background: rgb(226, 124, 29);}/*1+1*/
 ul li[class="list-item"]{background: rgb(20, 190, 34);}/*1+1+10*/
 ul[class="list"] li{background: rgb(20, 190, 34);}/*1+10+1*/
 body ul li{background: rgb(226, 29, 127);}/*1+1+1*/
+body div ul li{background: rgb(226, 29, 127);}/*1+1+1+1*/
+body._container ul li{background: rgb(226, 29, 127);}/*1+1+10+1*/
 html body ul li{background: rgb(29, 170, 226);}/*1+1+1+1*/
 li.list-item{background: rgb(236, 17, 17);}/*1+10*/
 ul li.list-item{background: rgb(190, 226, 29);}/*1+1+10*/
@@ -66,9 +71,11 @@ html body ul li{background: rgb(233, 31, 165);}/*1+1+1+1*/
 body ul.list li{background: rgb(81, 29, 226);}/*1+1+10+1*/
 body ul li.list-item{background: rgb(81, 29, 226);}/*1+1+1+10*/
 body ul.list li.list-item{background: rgb(29, 170, 226);}/*1+1+10+1+10*/
+body._container ul.list li.list-item{background: rgb(29, 170, 226);}/*1+1+10+10+1+10*/
+body div ul.list li.list-item{background: rgb(29, 170, 226);}/*1+1+1+10+1+10*/
 body ul.list li.list-item[class="list-item"]{background: rgb(29, 187, 226);}/*1+1+10+1+10+10*/
 body ul.list[class="list"] li.list-item{background: rgb(70, 6, 22);}/*1+1+1+10+10+1+10*/
-body ul.list[class="list"] li.list-item[class="list-item"]{background: rgb(201, 22, 147);}/*1+1+1+10+10+1+10+10*/
+body ul.list[class="list"] li.list-item[class="list-item"]{background: rgb(49, 212, 62);  font-family: "CaviarDreamsBold";}/*1+1+1+10+10+1+10+10*/
 html body ul.list li{background: rgb(45, 247, 230);}/*1+1+1+10+1*/
 html body ul li.list-item{background: rgb(29, 170, 226);}/*1+1+1+1+10*/
 html body ul.list li.list-item{background: rgb(226, 29, 55);}/*1+1+1+10+1+10*/
@@ -76,6 +83,8 @@ html body ul.list li.list-item[class="list-item"]{background: rgb(29, 187, 226);
 html body ul.list[class="list"] li.list-item{background: rgb(206, 19, 66);}/*1+1+1+10+10+1+10*/
 html body ul.list[class="list"] li.list-item[class="list-item"]{background: rgb(238, 238, 236);}/*1+1+1+10+10+1+10+10*/
 html body ul.list[class="list"] li.list-item[class="list-item"]:hover:nth-child(7){background: rgb(171, 22, 201);}/*1+1+1+10+10+1+10+10*/
+html body div ul.list[class="list"] li.list-item[class="list-item"]:hover:nth-child(7){background: rgb(171, 22, 201);}/*1+1+1+1+10+10+1+10+10*/
+html body._container ul.list[class="list"] li.list-item[class="list-item"]:hover:nth-child(7){background: rgb(171, 22, 201);}/*1+1+10+1+10+10+1+10+10*/
 li:nth-child(7){
    color: fuchsia;
    list-style-image: url('../img/Unt.png');
@@ -91,7 +100,6 @@ ul.list li:nth-child(7):after{
    display: inline-block;
 }/*1+1+1+1*/
 ul.list li:nth-last-child(6):before{
-
    content: '\25b6';
    display: inline-block;
 }/*1+10+1*/
@@ -109,11 +117,14 @@ ul.list li:nth-last-child(6) a:active{
 }/*1+10+1+1*/
 
 /*---Стилизация и  разные виды обращений к элементу P-------------------------*/
-p{color: rgb(12, 75, 75);}/*1*/
+
+p{color: rgb(12, 75, 75); font-family: "CaviarDreamsBoldItalic";}/*1*/
 li p{color: blue;}/*1+1*/
 ul li p{color: blueviolet;}/*1+1+1*/
 body ul li p{color: brown;}/*1+1+1+1*/
 html body ul li p{color: rgb(165, 42, 144);}/*1+1+1+1+1*/
+html body div ul li p{color: rgb(165, 42, 144);}/*1+1+1+1+1+1*/
+html body._container ul li p{color: rgb(165, 42, 144);}/*1+1+10+1+1+1*/
 p.list-item__text{color: rgb(107, 34, 49);}/*1+10*/
 li p.list-item__text{color: rgb(31, 31, 59);}/*1+1+10*/
 ul li p.list-item__text{color: rgb(110, 95, 124);}/*1+1+1+10*/
@@ -135,17 +146,22 @@ html body ul li.list-item[class="list-item"] p.list-item__text{color: rgb(43, 49
 li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]{color: rgb(134, 134, 194);}/*1+10+10+1+10+10*/
 ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]{color: rgb(14, 12, 15);}/*1+1+10+10+1+10+10*/
 body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]{color: rgb(153, 138, 196);}/*1+1+1+10+10+1+10+10*/
+body div ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]{color: rgb(153, 138, 196);}/*1+1+1+1+10+10+1+10+10*/
+body._container ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]{color: rgb(153, 138, 196);}/*1+1+10+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]{color: rgb(94, 138, 118);}/*1+1+1+1+10+10+1+10+10*/
+html body div ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]{color: rgb(94, 138, 118);}/*1+1+1+1+1+10+10+1+10+10*/
+html body._container ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]{color: rgb(94, 138, 118);}/*1+1+10+1+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(4){color: rgb(226, 32, 129);}/*1+1+1+1+10+10+1+10+10*/
+html body div ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(4){color: rgb(226, 32, 129);}/*1+1+1+1+1+10+10+1+10+10*/
+html body._container ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(4){color: rgb(226, 32, 129);}/*1+1+10+1+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-last-child(2){color: rgb(32, 226, 184);}/*1+1+1+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(4n){color: rgb(124, 45, 14);}/*1+1+1+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(2n){color: rgb(4, 36, 4);}/*1+1+1+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(2n+2){color: rgb(66, 245, 66);}/*1+1+1+1+10+10+1+10+10*/
-html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(-n+4){color: rgb(3, 27, 3);}/*1+1+1+1+10+10+1+10+10*/
+html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(-n+4){color: rgb(27, 128, 27);}/*1+1+1+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(4)::after{
    content: '\25c0';
    display: inline-block;
-
 }/*1+1+1+1+10+10+1+10+10*/
 html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item__text"]:nth-child(4)::before{
    content: '\25b6';
@@ -167,6 +183,7 @@ li:nth-child(11){
 }
 
 /*---Стилизация и  разные виды обращений к элементу INPUT-CHECKBOX-------------*/
+
 input{}/*1*/
 form input{}/*1+1*/
 form>input{}/*1+1*/
@@ -176,10 +193,15 @@ html body input{}/*1+1+1*/
 html body form input{}/*1+1+1+1*/
 html body form.account-form input{}/*1+1+1+10+1*/
 html body form #account-form__checkbox{}/*1+1+1+1+100*/
+html body div form #account-form__checkbox{}/*1+1+1+1+1+100*/
+html body._container form #account-form__checkbox{}/*1+1+10+1+1+100*/
 body form.account-form #account-form__checkbox{}/*1+1+10+100*/
 body form.account-form input{}/*1+1+10+1*/
+body div form.account-form input{}/*1+1+1+10+1*/
+body._container form.account-form input{}/*1+1+10+10+1*/
 body form.account-form input[type="checkbox"]{}/*1+1+10+1+10*/
 html body form.account-form input[type="checkbox"]{}/*1+1+1+10+1+10*/
+html body form.account-form textarea+input{}/*1+1+1+10+1+1*/
 #account-form__checkbox {
 	display: block;
 	width: 17px;
@@ -207,6 +229,7 @@ html body form.account-form input[type="checkbox"]{}/*1+1+1+10+1+10*/
 }/*100*/
 
 /*---Стилизация и  разные виды обращений к элементу IMG-------------*/
+
 img{}/*1*/
 button[type="submit"] img{}/*1+10+1*/
 form img{}/*1+1*/
@@ -248,12 +271,19 @@ html body form.account-form button[type="submit"]:hover{
 
    
 }/*1+1+1+10+1+10*/
+html body form.account-form input+button{
+}/*1+1+1+10+1+1*/
+html body form.account-form input+button img{
+}/*1+1+1+10+1+1+1*/
 
 /*---Общие классы, id, теги-----------------------------*/
+
 a{
    text-decoration: none;
-   color: rgb(231, 66, 231);
+   color: rgb(66, 143, 231);
 }/*1*/
+html body div ul li:nth-child(6)+li{}/*1+1+1+1+1+1*/
+html body._container ul li:nth-child(6)+li{}/*1+1+10+1+1+1*/
 .list {
    list-style-type: square;  
 }/*10*/
@@ -261,6 +291,10 @@ a{
    padding: 0px 0px 0px 10px;
    border-radius: 10px;
 }/*10*/
+.list-item:nth-child(7)>a{
+   color: rgb(31, 124, 93);
+   font-family: "CaviarDreamsItalic";
+}/*10+1*/
 .list-item:not(:last-child) {
    margin: 0px 0px 10px 0px;
 }/*10*/
