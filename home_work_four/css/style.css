@@ -85,7 +85,7 @@ html body ul.list[class="list"] li.list-item[class="list-item"]{background: rgb(
 html body ul.list[class="list"] li.list-item[class="list-item"]:hover:nth-child(7){background: rgb(171, 22, 201);}/*1+1+1+10+10+1+10+10*/
 html body div ul.list[class="list"] li.list-item[class="list-item"]:hover:nth-child(7){background: rgb(171, 22, 201);}/*1+1+1+1+10+10+1+10+10*/
 html body._container ul.list[class="list"] li.list-item[class="list-item"]:hover:nth-child(7){background: rgb(171, 22, 201);}/*1+1+10+1+10+10+1+10+10*/
-li:nth-child(7){
+ul.list li:nth-child(7){
    color: fuchsia;
    list-style-image: url('../img/Unt.png');
 }/*1+1*/
@@ -177,7 +177,7 @@ html body ul li.list-item[class="list-item"] p.list-item__text[class="list-item_
 
 }/*1+1+1+1+10+10+1+10+10*/
 ul> *{background: rgb(204, 204, 207);}
-li:nth-child(11){
+ul.list li:nth-child(11){
    list-style-type: none;
    padding: 15px;
 }
@@ -314,3 +314,41 @@ html body._container ul li:nth-child(6)+li{}/*1+1+10+1+1+1*/
 #account-form__checkbox {
   
 }/*100*/
+/*---классная работа--------------------*/
+.list-color{
+ background: #CCCCCF;
+
+}
+.list-item__color{
+   padding: 0px 0px 0px 10px;
+   border-radius: 10px;
+   background: #fff;
+   
+}
+.list-item__color:not(:last-child){
+   margin: 0px 0px 10px 0px;   
+}
+.list-item__color:nth-child(6){
+   background: blue;
+}
+.list-item__color:nth-child(6)+li{
+   background: blue;
+}
+.list-item__color:nth-child(-n+2){
+   background: blue;
+}
+.list-item__color:nth-child(2n+8){
+   background: yellow;
+}
+.list-item__color:first-child{
+   background: green;
+}
+.list-item__color:nth-child(7n+4){
+   background: orange;
+}
+.list-item__color:nth-child(6n+3){
+   background: red;
+}
+.list-item__color:nth-last-child(7){
+   background: green;
+}
