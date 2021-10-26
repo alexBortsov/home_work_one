@@ -239,19 +239,31 @@ color: cornsilk;
 .block_five{
    width: 100px;
    height: 800px;
-   background: rgb(10, 116, 165);
+   background: rgb(230, 74, 26);
    display: flex;
    justify-content: center;
    align-items: center;
    position: absolute;
    z-index: 4;
    top: 5%;
-   left: 114%;
-
-   
+   left: 114%;  
 }
 
 .block_five section h1{
    transform: rotate( 90deg);
    color: cornsilk;
 }
+.block_six{
+   width: 800px;
+   height: 100px;
+   background: rgb(10, 116, 165);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: static;
+   z-index: 4;
+   top: 5%;
+   left: 114%;
+   color: #fff;  
+}
+
