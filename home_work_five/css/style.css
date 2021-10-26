@@ -1,0 +1,257 @@
+html,
+body{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+/*div{
+ width: 500px;
+ height: 500px;
+ position: relative;
+ top: calc(50vh - 250px);
+ left: calc(50vw - 250px);
+ background: rgb(40, 221, 94);
+}
+section{
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ background: rgb(199, 43, 43);
+ position: absolute;
+ top: calc(50% - 25px);
+ left: calc(50% - 25px);
+}*/
+
+.block_two{
+   width: 800px;
+   height: 100px;
+   background: rgb(65, 44, 184);
+   position: sticky;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 5;
+}
+.block_two section{
+color: cornsilk;
+   
+}
+.block_two section h1{
+   text-align: center;
+   align-items: center;
+}
+._container{
+   width: 800px;
+   margin: 0 auto;
+   position: relative;
+}
+.block_section{
+   box-sizing: border-box;
+   width: 800px;
+   height: 800px;
+   border: 1px solid red;
+   position: relative;
+   top: 100px;
+   margin: 0px 0px 100px 0px;
+}
+.one {
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   font-size: 40px;
+   color: #fff;
+   background: rgb(226, 86, 86);
+   position: absolute;
+   width: 300px;
+   height: 300px;
+   top: 250px;
+   left: 250px;
+   z-index: 8;
+}
+.one span{
+   padding: 0px 10px 10px 0px;
+}
+.two {
+   background: rgb(55, 169, 197);
+   position: absolute;
+   width: 300px;
+   height: 300px;
+   top: 50px;
+   left: 50px;
+   z-index: 10;
+}
+.two span{
+   position: absolute;
+   bottom: 5px;
+   right: 10px;
+   font-size: 40px;
+   color: #fff;
+   z-index: 2;
+}
+.two div:nth-child(1){
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(216, 27, 27);
+   color: aliceblue;
+   bottom: calc(100% - 300px);
+   right: calc(100% - 300px);
+   z-index: 3;
+}
+.two div:nth-child(1):hover{
+   bottom: calc(100% - 175px);
+   right: calc(100% - 175px);
+   z-index: 7; 
+}
+.two div:nth-child(2){
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(11, 165, 70);
+   color: aliceblue;
+   bottom: calc(100% - 300px);
+   left: calc(100% - 300px);
+}
+.two div:nth-child(2):hover{
+   top: 0;
+   left: 0;
+   z-index: 7;
+}
+.two div:nth-child(3){
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(57, 30, 209);
+   color: aliceblue;
+   
+}
+.two div:nth-child(3):hover{
+   
+   bottom: calc(100% - 300px);
+   left: calc(100% - 300px);
+   z-index: 7;
+}
+
+.two div:nth-child(4){
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(218, 29, 117);
+   color: aliceblue;
+   top: calc(100% - 300px);
+   right: calc(100% - 300px);
+}
+.two div:nth-child(4):hover{
+   top: 0;
+   left: 0;
+   z-index: 7;
+}
+.two div:nth-child(5){
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(104, 105, 27);
+   color: aliceblue;
+   bottom: calc(100% - 175px);
+   right: calc(100% - 175px);
+}
+.two div:nth-child(5):hover{
+   top: calc(100% - 300px);
+   right: calc(100% - 300px);
+   z-index: 7; 
+}
+.three {
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   font-size: 40px;
+   color: #fff;
+   background: rgb(170, 206, 43);
+   position: absolute;
+   width: 300px;
+   height: 300px;
+   top: 150px;
+   left: 150px;
+   z-index: 9;
+}
+.three span{
+   padding: 0px 10px 10px 0px;
+}
+.block_one{
+   width: 800px;
+   height: 100px;
+   background: rgb(198, 218, 25);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   z-index: 12;
+   color: cornsilk;
+}
+.block_three{
+   width: 800px;
+   height: 100px;
+   background: rgb(50, 206, 97);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   z-index: 4;
+   top: 50%;
+   left: 0;
+   color: cornsilk;
+
+}
+.block_four{
+   width: 100px;
+   height: 800px;
+   background: rgb(230, 74, 26);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 4;
+   top: 5%;
+   right: 114%;
+   color: #fff;
+}
+.block_four section h1{
+   transform: rotate( 90deg);
+   color: cornsilk;
+}
+
+.block_five{
+   width: 100px;
+   height: 800px;
+   background: rgb(10, 116, 165);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 4;
+   top: 5%;
+   left: 114%;
+
+   
+}
+
+.block_five section h1{
+   transform: rotate( 90deg);
+   color: cornsilk;
+}
