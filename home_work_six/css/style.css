@@ -1,0 +1,124 @@
+body{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+.header{
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: cadetblue;
+   position: fixed;
+   top: 0;
+   text-align: center;
+   z-index: 20;
+   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+._container{
+   max-width: 80%;
+   margin: 200px auto;
+}
+.block {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   border: 3px solid #dadadd;
+   padding: 10px;
+   border-radius: 15px;
+   background: rgb(223, 229, 228);
+  
+}
+.block-item {
+   width: 300px;
+   text-align: center;   
+   border: 1px solid green;
+   border-radius: 15px;
+   box-shadow: 10px 5px 5px 5px grey;
+   background: #fff;
+}
+.block-item:not(:last-child){
+   margin: 15px 15px 0px 0px;
+}
+
+.badge{
+  display: inline-block;
+  background: rgb(230, 34, 34);
+  color: #fff;
+  padding: 10px 50px 10px 50px;
+  margin: 20px 165px 0px 0px; 
+}
+.badge_new{
+   display: inline-block;
+   background: #000;
+   color: #fff;
+   padding: 10px 50px 10px 50px;
+  margin: 20px 165px 0px 0px; 
+}
+img{
+   border-radius: 15px;
+   width: 300px;
+   height: 200px;
+
+}
+.block-item_img {
+   background-size: cover;
+   background-position: center;
+}
+.block-item_text{
+   font-weight: bold;
+   padding: 0px 33px;
+   text-align: start;
+   margin: 0px 0px 55px 0px;
+   font-family: 'IBM Plex Sans', sans-serif;
+
+}
+.block-item_price, .block-item_prices{
+   text-align: end;
+   padding: 0px 20px 0px 0px;
+   color: #ff0000;
+   font-weight: bold;
+   position: relative;
+   margin: 0px 0px 20px 0px;
+   font-family: 'IBM Plex Sans', sans-serif;
+}
+.block-item_price:before{
+   content: '3399.00 \20B4';
+   color: grey;
+   text-decoration: line-through;
+   position: absolute;
+   top: -148%;
+   right: 6%;
+   font-family: 'IBM Plex Sans', sans-serif;
+}
+.block-item_button {
+   margin: 0px 0px 20px 0px;
+}
+.block-item_button button{
+  width: 85%;
+  padding: 13px 0px;
+  background: rgb(231, 41, 41);
+  border: 1px solid white;
+  border-radius: 4px;
+  color: #fff; 
+}
+.fas{
+   color: #fff;
+   padding: 0px 10px 0px 0px;
+}
+
+.footer{
+   min-width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   background: rgb(11, 38, 61);
+   height: 200px;
+   position: sticky;
+   bottom: 0;
+   color: #fff;
+   padding: 5px;
+}
