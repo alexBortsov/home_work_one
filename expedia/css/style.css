@@ -220,13 +220,14 @@ body{
 
 .newlife__body {
    padding: 0px 15px;
-}
-.newlife__column {
    display: flex;
    flex-direction: row;
    justify-content: center;
    flex-wrap: wrap;
+}
 
+.newlife__column {
+   
 }
 
 .newlife__item {
@@ -234,8 +235,8 @@ body{
    display: flex;
    position: relative;
 }
-.item-newlife:not(:last-child){
-   margin: 0px 0px 0px 0px;
+.newlife__column:not(:last-child){
+   margin: 0px 36px 0px 0px;
 }
 .newlife__front{
    background: linear-gradient(90deg, #00C7DC 6.25%, rgba(22, 220, 240, 0.46) 100%);
@@ -439,6 +440,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: space-around;
+   overflow: hidden;
 }
 /*---BOOK A TICKETS PAGE  ----------------------------------------*/
 .page__booktickets {
@@ -498,4 +500,11 @@ body{
    height: 100%;
    top: 0;
    left: 0;
+}
+.booktickets__image img{
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
 }
