@@ -69,7 +69,8 @@ body{
    display: flex;
    align-items: center;
 }
-.header__logo {
+.header__logo,
+.footer__logo {
    display: flex;
    background: radial-gradient(94.74% 94.74% at 26.32% 5.26%, #16DCF0 0%, #1EB3C2 47.4%, #16DCF0 100%);
    border-radius: 50%;
@@ -448,51 +449,174 @@ body{
 .booktickets {
    margin: 50px 0px 0px 0px;
    position: relative;
-   padding: 0px 0px 34.69% 0px;
+   padding: 0px 0px 45% 0px;
 }
 .booktickets__container {
 }
-.booktickets__body {
+.booktickets__body{
+   position: absolute;
+   z-index: 2;
+   width: 60.9%;
+   background-color: #fff;
+   top: calc(50% - 44%);
+   left: calc(50% - 30.45%);
+   padding: 84px;
+   text-align: center;
 }
 .booktickets__title {
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 136%;
 }
+.booktickets__body_form{
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: start;
+   padding: 80px 0px 20px 0px;
+}
+
 .booktickets__form {
 }
-.boocktickets__personal-data-data {
+.booktickets__personal-data-data {
+   flex: 0 1 50%;
+   display: flex;
+   flex-direction: column;
 }
-.boocktickets__personal-data {
+.booktickets__personal-data {
+   display: flex;
+   flex-direction: column;
+   padding: 0px 10px 30px 0px;
+   
 }
 .personal-data__name {
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 136%;
+   padding: 0px 0px 5px;
 }
 .personal-data__input {
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 9px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
 }
 .personal-data__surname {
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 136%;
+   padding: 30px 0px 5px;
 }
 .booktickets__data {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 10px 0px 0px;
 }
-.data__arrival_label {
+.booktickets__data_column{
+
+}
+.data__arrival_label,
+.data__departure_label {
+   display: block;
+   padding: 0px 0px 5px 0px;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 136%;
 }
 .data__arrival_input {
 }
-.data__departure_label {
-}
+
 .data__departure_input {
 }
 .booktickets__location-guests {
+   flex: 0 1 50%;
+}
+.booktickets__guests_column{
+
 }
 .booktickets__location {
+   display: flex;
+   flex-direction: column;
+   padding: 0px 10px;
 }
 .location__city_label {
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 136%;
+   padding: 0px 0px 5px;
+}
+.location__city_select{
+  
+}
+.location__hotel_select, 
+.location__city_select,
+.data__arrival_input, 
+.data__departure_input{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   padding: 8px 9px;
+   margin-bottom: 0;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 150%;
+   color: #495057;
+   text-align: center;
+   white-space: nowrap;
+   background-color: #e9ecef;
+   border: 1px solid #ced4da;
+   border-radius: 2px;
+}
+.location__hotel_select, 
+.location__city_select{
+   padding: 9px 9px;
 }
 .location__hotel_label {
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 136%;
+   padding: 32px 0px 5px;
 }
 .booktickets__guests {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 32px 5px;
 }
 .guests__label {
 }
 .booktickets__button {
+   display: flex;
+   justify-content: flex-end;
 }
 .booktickets__submit {
+   border-radius: 5px;
+   padding: 10px 36px;
+   display: flex;
+   min-height: 48px;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 0.2px;
+   font-weight: 700;
+   line-height: 200%; 
+   background: #16DCF0;
 }
 .booktickets__image {
    position: absolute;
@@ -507,4 +631,34 @@ body{
    top: 0;
    left: 0;
    object-fit: cover;
+}
+/*---FOOTER--------------------------------------------------------*/
+.footer {
+   max-height: 187px;
+}
+.footer__container{
+   padding: 100px 0px 60px 0px;
+}
+.footer__body {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.footer__column {
+}
+.footer__body_logo {
+}
+.footer__menu {
+   color: #333;
+   font-size: 16px;
+   font-weight: 700;
+}
+.menu__list {
+}
+.menu__item {
+}
+.menu__link_footer {
+   color: inherit;
+   font-size: inherit;
+   font-weight: inherit;
 }
