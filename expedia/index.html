@@ -14,10 +14,12 @@
    <div class="wrapper">
       <header class="header">
          <div class="header__container _contaner">
-            <div class="burger-menu"></div>
+            <div class="burger-menu">
+               <span></span>
+            </div>
             <div class="header__body_logo">
                <a href="" class="header__logo">
-                  <img src="./img/logo.png" alt="">
+                  <img src="./img/header/logo.png" alt="">
                </a>
                <h4 class="header__logo_title">Expedia</h4>
             </div>
@@ -32,6 +34,14 @@
             <div class="header__search">
                <form action="" class="search__form">
                   <input type="text" class="search__input">
+
+                  <a class="feader__search_search">
+                     <img src="./img/body/search.svg" alt="">
+                  </a>
+
+                  <a class="feader__search_star">
+                     <img src="./img/body/star.svg" alt="">
+                  </a>
                </form>
             </div>
          </div>
@@ -48,7 +58,7 @@
                </div>
             </div>
             <div class="main-block_image">
-               <img src="./img/main.jpg" alt="cover">
+               <img src="./img/main/main.jpg" alt="cover">
             </div>
          </div>
       </main>
@@ -62,6 +72,11 @@
             <div class="newlife__body">
                <div class="newlife__column">
                   <div class="newlife__item item-newlife">
+                     <div class="newlife__star">
+                        <a href="" class="newlife__star_link">
+                           <img src="./img/body/star.svg" alt="">
+                        </a>
+                     </div>
                      <div class="newlife__front">
                         <div class="newlife__title">Ao Nang</div>
                         <div class="newlife__text">
@@ -79,6 +94,11 @@
                </div>
                <div class="newlife__column">
                   <div class="newlife__item item-newlife">
+                     <div class="newlife__star">
+                        <a href="" class="newlife__star_link">
+                           <img src="./img/body/star.svg" alt="">
+                        </a>
+                     </div>
                      <div class="newlife__front">
                         <div class="newlife__title">Ao Nang</div>
                         <div class="newlife__text">
@@ -96,6 +116,11 @@
                </div>
                <div class="newlife__column">
                   <div class="newlife__item item-newlife">
+                     <div class="newlife__star">
+                        <a href="" class="newlife__star_link">
+                           <img src="./img/body/star.svg" alt="">
+                        </a>
+                     </div>
                      <div class="newlife__front">
                         <div class="newlife__title">Ao Nang</div>
                         <div class="newlife__text">
@@ -145,92 +170,95 @@
             <h2 class="booktickets__title">Book A Ticket And Just Leave</h2>
             <form action="" class="booktickets__form">
                <div class="booktickets__body_form">
-                  <div class="booktickets__personal-data-data">
-                     <div class="booktickets__personal-data">
-                        <label for="" class="personal-data__name">Name</label>
-                        <input type="text" name="name" id="" class="personal-data__input">
-                        <label for="" class="personal-data__surname">Suname</label>
-                        <input type="text" name="name" id="" class="personal-data__input">
-                     </div>
-                     <div class="booktickets__data">
-                        <div class="booktickets__data_column">
-                           <label for="data__arrival" class="data__arrival_label">Arrival</label>
-                           <input type="date" name="data__arrival" id="" class="data__arrival_input">
-                        </div>
-                        <div class="booktickets__data_column">
-                           <label for="data__departure" class="data__departure_label">Departure</label>
-                           <input type="date" name="data__departure" id="" class="data__departure_input">
-                        </div>
-                     </div>
+                  <div class="booktickets__column">
+                     <label for="" class="personal-data__label name">Name</label>
+                     <input type="text" name="name" id="" class="personal-data__input">
                   </div>
-                  <div class="booktickets__location-guests">
-                     <div class="booktickets__location">
-                        <label for="location__city" class="location__city_label">City</label>
-                        <select name="location__city" class="location__city_select">
-                           <optgroup label="Украина">
-                              <option value="Киев">Киев</option>
-                              <option value="Харьков">Харьков</option>
-                              <option value="Запорожье">Запорожье</option>
-                           </optgroup>
-                           <optgroup label="Беларусь">
-                              <option value="Минск">Минск</option>
-                              <option value="Бобруйск">Бобруйск</option>
-                              <option value="Гомель">Гомель</option>
-                           </optgroup>
-                           <optgroup label="Россия">
-                              <option value="Москва">Москва</option>
-                              <option value="Санкт-Петербург">Санкт-Петербург</option>
-                              <option value="Новосибирск">Новосибирск</option>
-                           </optgroup>
-                           <optgroup label="USA">
-                              <option value="California">California</option>
-                              <option value="New York">New York</option>
-                              <option value="Texas">Texas</option>
-                           </optgroup>
-                        </select>
-                        <label for="location__hotel" class="location__hotel_label">Hotel</label>
-                        <select name="location__hotel" class="location__hotel_select">
-                           <optgroup label="Украина">
-                              <option value="Киев">Киев</option>
-                              <option value="Харьков">Харьков</option>
-                              <option value="Запорожье">Запорожье</option>
-                           </optgroup>
-                           <optgroup label="Беларусь">
-                              <option value="Минск">Минск</option>
-                              <option value="Бобруйск">Бобруйск</option>
-                              <option value="Гомель">Гомель</option>
-                           </optgroup>
-                           <optgroup label="Россия">
-                              <option value="Москва">Москва</option>
-                              <option value="Санкт-Петербург">Санкт-Петербург</option>
-                              <option value="Новосибирск">Новосибирск</option>
-                           </optgroup>
-                           <optgroup label="USA">
-                              <option value="California">California</option>
-                              <option value="New York">New York</option>
-                              <option value="Texas">Texas</option>
-                           </optgroup>
-                        </select>
-                     </div>
+                  <div class="booktickets__column">
+                     <label for="location__city" class="location__city_label">City</label>
+                     <select name="location__city" class="location__city_select">
+                        <optgroup label="Украина">
+                           <option value="Киев">Киев</option>
+                           <option value="Харьков">Харьков</option>
+                           <option value="Запорожье">Запорожье</option>
+                        </optgroup>
+                        <optgroup label="Беларусь">
+                           <option value="Минск">Минск</option>
+                           <option value="Бобруйск">Бобруйск</option>
+                           <option value="Гомель">Гомель</option>
+                        </optgroup>
+                        <optgroup label="Россия">
+                           <option value="Москва">Москва</option>
+                           <option value="Санкт-Петербург">Санкт-Петербург</option>
+                           <option value="Новосибирск">Новосибирск</option>
+                        </optgroup>
+                        <optgroup label="USA">
+                           <option value="California">California</option>
+                           <option value="New York">New York</option>
+                           <option value="Texas">Texas</option>
+                        </optgroup>
+                     </select>
+                  </div>
+                  <div class="booktickets__column">
+                     <label for="" class="personal-data__label surname">Suname</label>
+                     <input type="text" name="name" id="" class="personal-data__input">
+                  </div>
+                  <div class="booktickets__column">
+                     <label for="location__hotel" class="location__hotel_label">Hotel</label>
+                     <select name="location__hotel" class="location__hotel_select">
+                        <optgroup label="Украина">
+                           <option value="Киев">Киев</option>
+                           <option value="Харьков">Харьков</option>
+                           <option value="Запорожье">Запорожье</option>
+                        </optgroup>
+                        <optgroup label="Беларусь">
+                           <option value="Минск">Минск</option>
+                           <option value="Бобруйск">Бобруйск</option>
+                           <option value="Гомель">Гомель</option>
+                        </optgroup>
+                        <optgroup label="Россия">
+                           <option value="Москва">Москва</option>
+                           <option value="Санкт-Петербург">Санкт-Петербург</option>
+                           <option value="Новосибирск">Новосибирск</option>
+                        </optgroup>
+                        <optgroup label="USA">
+                           <option value="California">California</option>
+                           <option value="New York">New York</option>
+                           <option value="Texas">Texas</option>
+                        </optgroup>
+                     </select>
+                  </div>
+                  <div class="booktickets__column">
+                     <label for="data__arrival" class="data__arrival_label">Arrival</label>
+                     <input type="date" name="data__arrival" id="" class="data__arrival_input">
+                  </div>
+                  <div class="booktickets__column">
+                     <label for="data__departure" class="data__departure_label">Departure</label>
+                     <input type="date" name="data__departure" id="" class="data__departure_input">
+                  </div>
+
+                  <div class="booktickets__column">
+                     <h6 class="booktickets__guests_title">Guests</h6>
                      <div class="booktickets__guests">
-                        <div class="booktickets__guests_column">
+                        <div class="booktickets__guests_row">
                            <input type="radio" name="guests" id="">
                            <label for="guests" class="guests__label">1 Person</label>
                         </div>
-                        <div class="booktickets__guests_column">
+                        <div class="booktickets__guests_row">
                            <input type="radio" name="guests" id="">
                            <label for="guests" class="guests__label">2 Persons</label>
                         </div>
-                        <div class="booktickets__guests_column">
+                        <div class="booktickets__guests_row">
                            <input type="radio" name="guests" id="">
                            <label for="guests" class="guests__label">4 Persons</label>
                         </div>
-                        <div class="booktickets__guests_column">
+                        <div class="booktickets__guests_row">
                            <input type="checkbox" name="guests" id="">
                            <label for="guests" class="guests__label">Transfer</label>
                         </div>
                      </div>
                   </div>
+
                </div>
                <div class="booktickets__button">
                   <button type="submit" class="booktickets__submit">Explore</button>
@@ -248,7 +276,7 @@
             <div class="footer__column">
                <div class="footer__body_logo">
                   <a href="" class="footer__logo">
-                     <img src="./img/logo.png" alt="">
+                     <img src="./img/header/logo.png" alt="">
                   </a>
                </div>
             </div>
@@ -270,7 +298,7 @@
          </div>
       </div>
    </footer>
-</div>
+   </div>
 </body>
 
 </html>
