@@ -18,12 +18,11 @@ body{
 }
 
 ._container{
-   max-width: 80%;
+   max-width: 60%;
    margin: 200px auto;
 }
 .block {
    display: flex;
-   justify-content: space-around;
    align-items: center;
    flex-wrap: wrap;
    border: 3px solid #dadadd;
@@ -40,7 +39,7 @@ body{
    box-shadow: 10px 5px 5px 5px grey;
    background: #fff;
 }
-.block-item:not(:last-child){
+.block-item{
    margin: 15px 15px 0px 0px;
 }
 
