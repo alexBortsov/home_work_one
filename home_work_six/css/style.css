@@ -18,7 +18,7 @@ body{
 }
 
 ._container{
-   max-width: 60%;
+   max-width: 59%;
    margin: 200px auto;
 }
 .block {
@@ -26,17 +26,17 @@ body{
    align-items: center;
    flex-wrap: wrap;
    border: 3px solid #dadadd;
-   padding: 10px;
+   padding: 8px 6px 10px 10px;
    border-radius: 15px;
    background: rgb(223, 229, 228);
   
 }
 .block-item {
-   width: 300px;
+   width: 302px;
    text-align: center;   
    border: 1px solid green;
    border-radius: 15px;
-   box-shadow: 10px 5px 5px 5px grey;
+   box-shadow: 8px 5px 5px 5px grey;
    background: #fff;
 }
 .block-item{
